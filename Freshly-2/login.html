@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255,253,247);
+        }
+        *{
+            font-family: sans-serif;
+        }
+       #icon {
+            height: 32px;
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        #img2 {
+            width: 80px;
+            height: 25px;
+            margin-left: 30px;
+        }
+
+        #img {
+            height: 30px;
+            width: 4%;
+            border-bottom: 2px solid rgb(3, 81, 78);
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        #logindiv {
+            width: 100%;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 253, 247);
+            margin-bottom: 10px;
+            /* position: sticky;  new */
+            position: sticky;
+            top: 0px;
+        }
+        #logo {
+            height: 24px;
+            width: 107px;
+            margin: 16px 0px 16px 0px;
+        }
+
+        #menu {
+            display: flex;
+        }
+        #menu>div {
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-left: 40px;
+        }
+        #log{
+            background-color: rgb(255,253,247);
+            width: 100%;
+            height: 400px;
+            border: 0px solid teal;
+            margin-left: 330px;
+        }
+        #p1{
+            margin-right: 500px;
+            margin:0px 500px 0px 0px;
+        }
+        #p2{
+            margin:20px 460px 20px 20px;
+        }
+        input{
+            height: 30px;
+            width: 700px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        #head{
+            padding-left: 280px;
+            font-size: 40px;
+        }
+        #input{
+            width: 700px;
+            height: 50px;
+            background-color: rgb(49,103,255);
+            border: transparent;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            margin-top:50px;
+        }
+        #last>div{
+            margin-right: 100px;
+        }
+        #last h4{
+            color: rgb(57,61,64);
+            font-weight: normal;
+        }
+        #last p{
+            color: gray;
+            font-weight: normal;
+        }
+        #medlogo{
+            height: 16px;
+            width: 16x;
+            margin-bottom: 20px;
+        }
+        #storelogo{
+            width: 120px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="icon">
+        <div id="img">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                alt="" />
+        </div>
+        <div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e5362c26e009ed80a5a_bizlogo_gray-09.svg"
+                alt="" id="img2">
+        </div>
+    </div>
+    <div id="logindiv">
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+            alt="" id='logo'>
+        <div id="menu">
+            <div>
+                <p>Plans & Menu</p>
+            </div>
+            <div>
+                <p>How it works</p>
+            </div>
+            <div>
+                <p>Gifts</p>
+            </div>
+            <div>
+                <p>Refer a Friend</p>
+            </div>
+            <div>
+                <p>Help</p>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex;">
+                <a href="login.html">
+                    <p style="margin-left: 20px; padding: 10px; color: black;"><b> Login</b></p>
+                </a>
+                <a href="Signup.html">
+                    <p style="background-color:rgb(49,103,255);color:white;margin-left: 20px; padding: 10px;"><b>Sign
+                            Up</b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="log">
+        <h1 id="head">Log in</h1>
+        <form action="" id="login">
+            <div>
+                Email <br>
+                <input type="text" placeholder="Email" required><br>
+                Password <br>   
+                <input type="text" placeholder="Password" required><br>
+                <input  type="submit" value="Log in" id="input">
+            </div>
+        </form>
+    </div>
+
+    <div id="last">
+        <div style="margin-top: 25px;">
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt="" height="27px" width="117px">
+            </div>
+            <p style="font-weight:normal">© Freshly Inc.</p>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <p>Careers</p>
+            <p>Contact Us</p>
+            <p>Press</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Affiliates</p>
+            <p>Partnerships</p>
+        </div>
+        <div>
+            <h4>Learn More</h4>
+            <p>Plans & Menu</p>
+            <p>Why Freshly?</p>
+            <p>Gifts</p>
+            <p>FAQs</p>
+            <p>Blog</p>
+            <p>Students</p>
+
+        </div>
+        <div>
+            <h4>Join us</h4>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bbc67c09879c5a19b_5d795c37fedbb6017d824b02_icons8-facebook-old-30.jpg" alt="" id="medlogo">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423ad92101de48f410c7_5d10dfc0ef515f74b875a42c_icons8-instagram-50.jpg" alt="" id="medlogo">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bd050163202b341e8_5d10dfc00442bfc99d3d6828_icons8-twitter-filled-50.jpg" alt="" id="medlogo">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423a6b26e039d505425e_5d10dfbfef515faad975a42b_icons8-pinterest-filled-50.jpg" alt="" id="medlogo">
+            <br><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" id="storelogo">
+            <br><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="" id="storelogo">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var user=JSON.parse(localStorage.getItem('user')),count=0;
+    document.querySelector("#login").addEventListener('submit',function(){
+        var email=document.querySelectorAll('input')[0].value;
+        var pass=document.querySelectorAll('input')[1].value;
+        event.preventDefault()
+        for(var i=0;i<user.length;i++){
+            if(user[i].emailadd==email && user[i].passwd==pass){
+            window.location.href="Home.html"
+            localStorage.setItem('hello','Hi')
+            break;
+         }
+         count++
+    }
+    if(count==user.length){
+        alert("Invalid email or password")
+    }
+    })
+
+   
+</script>

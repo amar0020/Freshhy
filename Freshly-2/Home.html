@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c7762b47e9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        h1,h4,span,button,
+        p {
+            font-family: sans-serif;
+        }
+
+        #icon {
+            height: 32px;
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        #img2 {
+            width: 80px;
+            height: 25px;
+            margin-left: 30px;
+        }
+
+        #img {
+            height: 30px;
+            width: 4%;
+            border-bottom: 2px solid rgb(3, 81, 78);
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        #logindiv {
+            width: 100%;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 253, 247);
+            margin-bottom: 10px;
+            /* position: sticky;  new */
+            position: sticky;
+            top: 0px;
+        }
+
+        #logo {
+            height: 24px;
+            width: 107px;
+            margin: 16px 0px 16px 0px;
+        }
+
+        #menu {
+            display: flex;
+        }
+
+        #menu>div {
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-left: 40px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #exmeals {
+            display: flex;
+            width: 100%;
+        }
+
+        #exmeals>div:nth-child(1) {
+            width: 650px;
+            height: 650px;
+            background: rgb(254, 249, 234);
+        }
+
+        #exmeals>div:nth-child(2) {
+            width: 700px;
+            height: 650px;
+        }
+
+        #banner {
+            background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/61d331e43b58ddc513d4f87c_Q1_Homepage_Banner_V1_Notext_Alt_crop_2.jpeg);
+            background-size: cover;
+            height: 100%;
+        }
+
+        #banner>h2 {
+            color: white;
+            font-family: sans-serif;
+            margin: 410px 10px 0px 430px;
+        }
+
+        #banner>p {
+            color: rgb(241, 247, 255);
+            font-family: sans-serif;
+            margin-left: 380px;
+            margin-top: 10px;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        #discover {
+            height: 30px;
+            background-color: rgb(49, 103, 255);
+            width: 120px;
+            color: white;
+            text-align: center;
+            margin-left: 530px;
+            padding-bottom: 8px;
+        }
+
+        #discover>button {
+            background-color: rgb(49, 103, 255);
+            width: 120px;
+            color: white;
+            border: transparent;
+            font-family: sans-serif;
+            font-size: 15px;
+            padding-top: 10px;
+            height: 30px;
+        }
+
+        #menu-section {
+            background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/5d94e04ff2b857688f7138b6_home_image2.jpg);
+            background-size: cover;
+            height: 950px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #mymenu {
+            height: 840px;
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            margin: 60px 25% 60px 25%;
+        }
+
+        #mymenu>p {
+            margin: 0px;
+            padding: 30px;
+            padding-top: 0px;
+            line-height: 20px;
+
+        }
+
+        #mymenu>h1 {
+            margin: 0px;
+            padding: 30px;
+            padding-bottom: 10px;
+            font-size: 40px;
+            color: rgb(51, 51, 51)
+        }
+
+        #hitems {
+            display: grid;
+            grid-template-columns: repeat(3, 220px);
+            grid-template-rows: 280px 310px;
+        }
+
+        #hitems>div {
+            margin: 0px 0px 20px 20px;
+
+        }
+
+        #foodimg {
+            width: 195px;
+            height: 170px;
+            
+            border-radius: 15px;
+        }
+        #hitems>div:nth-child(1),#hitems>div:nth-child(4){
+            margin-left: 30px;
+        }
+        #hitems>div:nth-child(3),#hitems>div:nth-child(6    ){
+            margin-left: 8px;
+        }
+        #hitems>div>span{
+            padding-right: 7px;
+        }
+        #hitems>div>span,p{
+            font-size: 14px;
+        }
+        #hitems>button{
+            background-color: rgb(49,103,255);
+            height: 50px;
+            width: 600px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin:0px 36px 0px 30px;
+            border: transparent;
+        }
+        #plans{
+            width: 100%;
+            height: 700px;
+            border: 10x solid red;
+        }
+        #planslogo{
+            margin: 50px 45% 0px 45%;
+        }
+        #plans>h1{
+            margin: 50px 30% 0px 35%;
+            margin-top: 10px;
+            color:rgb(51,51,51)
+        }
+        #p1{
+            margin: 5px 34% 0px 34%; 
+            color:rgb(51,51,51);
+            width: 700px;
+        }
+        #p2{
+            margin: 10px 27% 0px 27%; 
+            color:rgb(51,51,51);
+            width: 700px;
+        }
+        #dmenu{
+            display: flex;
+            margin: 50px 10px 20px 80px;
+            justify-content: center;
+        }
+        #dimg{
+            background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/6192cc9d75bbb20e8074e602_Rectangle%20108.jpg);
+            background-size: cover;
+            overflow: hidden;
+            height: 150px;
+            width: 190px;
+            border-radius: 14px;
+            margin-right: 10px;
+            
+
+        }
+        #dimg>p{
+            background-color: rgb(133,229,198);
+            border-radius: 30px;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            margin-left: 5px;
+            height: 15px;
+        }
+        #review{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(255,253,247);
+        }
+        #review>h1{
+            margin-left: 550px;
+        }
+        #star{
+          color: rgb(239,207,70);
+        }
+        #review>div>div{
+            margin-left: 50px;
+        }
+        #zigzag{
+            height: 708;
+            margin-top: 60px;
+            width: 100%;
+        }
+        #zigzag1{
+            height: 600px;
+            margin-top: 60px;
+            width: 100%;
+            display: flex;
+        }
+        #my{
+            height: 322px;
+            width: 530px;
+            background-color: white;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        #myy{
+            height: 450px;
+            width: 610px;
+            background-color: white;
+            position: absolute;
+            margin-left: 700px;
+            margin-top: 70px;
+            display: grid;
+            grid-column: auto;
+        }
+        #myy>h1{
+            font-size: 50px;
+            color: rgb(51,51,51);
+            margin-left: 20px;
+        }
+        #myy p{
+            margin-left: 25px;
+            margin-top: 10px;
+            width: 100%;
+            font-weight: lighter;
+        }
+        #logosec{
+            width: 100%;
+            height: 170px;
+            background-color: rgb(247,247,247);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #logosec>img{
+            height: 150px;
+            width: 150px;
+            margin: 32px 24px 32px 24px;
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            margin-top:50px;
+        }
+        #last>div{
+            margin-right: 100px;
+        }
+        #medlogo{
+            height: 16px;
+            width: 16x;
+            margin-bottom: 20px;
+        }
+        #storelogo{
+            width: 120px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        #last h4{
+            color: rgb(57,61,64);
+            font-weight: normal;
+        }
+        #last p{
+            color: gray;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="icon">
+        <div id="img">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                alt="" />
+        </div>
+        <div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e5362c26e009ed80a5a_bizlogo_gray-09.svg"
+                alt="" id="img2">
+        </div>
+    </div>
+    <div id="logindiv">
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+            alt="" id='logo'>
+        <div id="menu">
+            <div>
+                <p>Plans & Menu</p>
+            </div>
+            <div>
+                <p>How it works</p>
+            </div>
+            <div>
+                <p>Gifts</p>
+            </div>
+            <div>
+                <p>Refer a Friend</p>
+            </div>
+            <div>
+                <p>Help</p>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex;">
+                <a href="login.html">
+                    <p style="margin-left: 20px; padding: 10px; color: black;"><b> Login</b></p>
+                </a>
+                <a href="Signup.html">
+                    <p style="background-color:rgb(49,103,255);color:white;margin-left: 20px; padding: 10px;"><b>Sign
+                            Up</b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id='exmeals'>
+            <div>
+                <h1
+                    style="margin:80px 80px 0px 80px;height: 175px;width:547px;font-size: 50px;font-family: sans-serif;">
+                    Chef cooked, healthy meals delivered to you.</h1>
+                <p style="margin:40px 0px 0px 80px;font-size: 20px;font-family: sans-serif"><b> See meals available in
+                        your area!</b></p>
+                <p style="margin:10px 0px 0px 80px;font-size: 15px;font-family: sans-serif"><b> Email address</b></p>
+                <input type="text"
+                    style="margin:10px 0px 0px 80px;font-size: 15px;font-family: sans-serif;height: 40px;width: 70%;background-color: rgb(247,247,247);border: transparent; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                <p style="margin:10px 0px 0px 80px;font-size: 15px;font-family: sans-serif"><b> ZIP code</b></p>
+                <input type="text"
+                    style="margin:10px 0px 0px 80px;font-size: 15px;font-family: sans-serif;height: 40px;width: 50%;background-color: rgb(247,247,247);border: transparent; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                <button
+                    style="height:40px;width: 140px;border: transparent;background-color: rgb(49,103,255);color: white;font-size: 15px;font-family: sans-serif;"><b>
+                        Explore Meals</b></button>
+                <p
+                    style="margin:10px 0px 0px 80px;font-size: 13px;font-family: sans-serif;width: 370px;line-height: 23px;">
+                    By continuing, you agree to our <a href="" style="text-decoration: underline;">Terms </a>and <a
+                        href="" style="text-decoration: underline;">Privacy Policy</a> & will receive emails from
+                    Freshly.
+                </p>
+            </div>
+            <div id="banner">
+                <h2>Better Begins here</h2>
+                <p>Kickstart your year of balanced eating.</p>
+                <div id="discover">
+                    <button>Discover More</button>
+                </div>
+            </div>
+        </div>
+        <div id="menu-section">
+            <div id="mymenu">
+                <h1>On the menu</h1>
+                <p style="font-size: 15px;">Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals are
+                    delivered fresh, and ready to eat in 3 minutes.</p>
+                <div id="hitems">
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Steak Peppercorn</h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61e3bbf71e27a78a237fd984_production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpeg
+
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Homestyle Chicken</h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61e3bbfab125b6b21baf1ac9_production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpeg
+
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Cauliflower Shell Beef Bolognese
+                        </h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61e3bbfee93df882573f2857_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg
+
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Savory-Sweet Chicken Teriyaki Bowl
+                        </h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb5d54bd5472_production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpeg
+
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Protein-Packed Chicken Parm
+                        </h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <div>
+                        <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61e3bc067781d935ac589515_production-meal-image-bc1b24c8-f62a-4756-a40e-173a8b67a590.jpeg
+
+                        " alt="" id="foodimg">
+                        <h4 style="margin-top: 8px; margin-bottom: 3px;color: rgb(48,48,75);">Golden Oven-Fried Chicken & Mash
+                        </h4>
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173);">500cal</span>|
+                        <span style="margin-top: 3px;margin-bottom: 2px; color: rgb(59,129,173)">Glutten Free</span>|
+                        <p style="margin-top: 2px; color: rgb(59,129,173)">Single-Serve</p>
+                    </div>
+                    <button onclick=product()>View Plans & Menu</button>
+                </div>
+            </div>
+        </div>
+        <div id="plans">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6192ce7669f68694a8b969af_Group%20(8).svg" alt="" id="planslogo">
+            <h1>Flexible plans that fit your life </h1>
+            <p id="p2">We offer anywhere from 4~12 meals per week, starting at $11.79 / meal. The bigger your box, the more you will </p>
+            <p id="p1">save—and you can always pause, cancel, or change your plan at any time.</p>
+            <div id="dmenu">
+                <div>
+                    <div>
+                        <div id="dimg"></div>
+                    </div>
+                    <h1 style="text-align: center;color: rgb(53,116,113);margin-top: 15px;">4-5 meals</h1>
+                </div>
+                <div>
+                    <div id="dimg">
+                        <p>Save up to $12</p>
+                    </div>
+                    <h1 style="text-align: center;color: rgb(53,116,113);margin-top: 15px;">6-7 meals</h1>
+                </div>
+                <div>
+                    <div id="dimg">
+                        <p>Save up to $20</p>
+                    </div>
+                    <h1 style="text-align: center;color: rgb(53,116,113);margin-top: 15px;">8-9 meals</h1>
+                </div>
+                <div>
+                    <div id="dimg">
+                        <p>Save up to $27</p>
+                    </div>
+                    <h1 style="text-align: center;color: rgb(53,116,113);margin-top: 15px;">10-11 meals</h1>
+                </div>
+                <div>
+                    <div id="dimg">
+                        <p>Save up to $33</p>
+                    </div>
+                    <h1 style="text-align: center;color: rgb(53,116,113);margin-top: 15px;">12 meals</h1>
+                </div>
+            </div>
+            <p style="margin-left: 620px;color: rgb(53,116,113)"><b> Shipping and tax added at checkout</b></p>
+            <button style="margin-left: 660px; padding: 15px;width: 140px;background-color: rgb(49,103,255);color: white;border: transparent;
+            "><b> Sign Up Now</b></button>
+        </div>
+        <div id="review">
+            <h1>What Others Are Saying</h1>
+            <div style="display: flex;justify-content: center;">
+                <div style="text-align: center;margin-top: 50px;">
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <h4 style="font-weight: 500;">Freshly has changed our lives!</h4>
+                    <p style="width:300px">With Freshly, we dont have to go anywhere or wait for delivery, and our monthly food bill has been cut nearly in half. We love it</p>
+                    <h5>Dave</h5>
+                </div>
+                <div style="text-align: center;margin-top: 50px;">
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <h4 style="font-weight: 500;">10 stars! Awesome! Love it!</h4>
+                    <p style="width:300px">We love Freshly because it takes two minutes to prepare, the food is great and we don’t have to spend time cleaning up.</p>
+                    <h5>Sheri</h5>
+                </div>
+                <div style="text-align: center;margin-top: 50px;">
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <i class="fas fa-star" id='star'></i>
+                    <h4 style="font-weight: 500;">One of the easiest decisions I've made</h4>
+                    <p style="width:300px">With Freshly, we dont have to go anywhere or wait for delivery, and our monthly food bill has been cut nearly in half. We love it</p>
+                    <h5>Cindi</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="zigzag">
+            <div id="my">
+                <h1>We believe eating right should be easy for everyone.</h1>
+                <p style="font-size: 15px;">Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals are delivered fresh, and ready to eat in 3 minutes.</p>
+                <button style="width: 100px;background-color: rgb(49,103,255);color: white;border: transparent;height: 50px;"><b>Learn More</button>
+            </div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d978a326f21d7b547d89e73_home_imageeat.jpg" 
+            alt="" style="width:800px; margin-left: 530px;">
+        </div>
+        <div id="zigzag1">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/60928e2ceb6cb2368a43ad07_Freshly_GiftCardRedemption_1732x1416%20(1).jpg" 
+            alt="" style="width:800px; margin-right: 530px;">
+            <div id="myy">
+                <h1>Healthy Meals Delivered Weekly</h1>
+                <input type="text" value="" style="margin: 0px 0px 10px 25px;height: 30px;width:400px" placeholder='freshly@freshly.com'>
+                <input type="text" value="" style="margin: 0px 0px 10px 25px;height: 30px;width: 400px;" placeholder="Zip">
+                <button style="width: 300px;background-color: rgb(49,103,255);color: white;border: transparent;height: 50px; margin-left: 25px;"><b>Get Started</button>
+                <p>Already have an account?Log in.</p> 
+                <p>By continuing, you agree to ourTermsandPrivacy Policy.& will receive emails from Freshly.</p>
+            </div>
+        </div>
+        <div id="logosec">
+            <img  style="margin-left:50px" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e435aee2e3a4ab03e6f_The_Huffington_Post_logo.svg" alt="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e412d98cd166a6c84e6_logo-header.64f3bdc15b1f321829f9f30c7853a1469f469d71.svg" alt="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e436b26e00a240533b1_Entrepreneur-01.svg" alt="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e432759db28ffaf924f_w-g-logo-black.svg" alt="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523f552759db186baf93d2_techcrunch-seeklogo.com%20%5BConverted%5D.svg" alt="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e434bbecc1909457f48_logo-header.aeb2e510354d524c42a87c5d0a97d0a73c5d7581.svg" alt="">
+        </div>
+
+        <div id="last">
+            <div style="margin-top: 25px;">
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt="" height="27px" width="117px">
+                </div>
+                <p style="font-weight:normal">© Freshly Inc.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>Press</p>
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>Affiliates</p>
+                <p>Partnerships</p>
+            </div>
+            <div>
+                <h4>Learn More</h4>
+                <p>Plans & Menu</p>
+                <p>Why Freshly?</p>
+                <p>Gifts</p>
+                <p>FAQs</p>
+                <p>Blog</p>
+                <p>Students</p>
+
+            </div>
+            <div>
+                <h4>Join us</h4>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bbc67c09879c5a19b_5d795c37fedbb6017d824b02_icons8-facebook-old-30.jpg" alt="" id="medlogo">
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423ad92101de48f410c7_5d10dfc0ef515f74b875a42c_icons8-instagram-50.jpg" alt="" id="medlogo">
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bd050163202b341e8_5d10dfc00442bfc99d3d6828_icons8-twitter-filled-50.jpg" alt="" id="medlogo">
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423a6b26e039d505425e_5d10dfbfef515faad975a42b_icons8-pinterest-filled-50.jpg" alt="" id="medlogo">
+                <br><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" id="storelogo">
+                <br><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="" id="storelogo">
+            </div>
+        </div>
+
+            
+
+
+
+</body>
+
+</html>
+
+<script>
+    function product(){
+        window.location.href="product.html"
+    }
+</script>

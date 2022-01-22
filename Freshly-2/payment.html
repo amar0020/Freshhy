@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c7762b47e9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #nav{
+            display: flex;
+            width: 100%;
+            height: 64px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            justify-content: space-between;
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            z-index: 9999;
+            background-color: white;
+        }
+        #logo{
+            height:47px; 
+            width:116px;
+            margin:10px;
+            margin-right: 45px;
+        }
+        #menu{
+            width: 240px;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 5px;
+            font-weight: bold;
+            margin-left: 100px;
+        }
+        #customer{
+            margin: 20px;
+        }
+        #heading{
+            display: flex;
+            justify-content: space-around;
+        }
+        #input{
+            display: flex;
+            justify-content: space-around;
+        }
+        #checkout{
+            width: 530px;
+            font-weight: bold;
+            background-color: white;
+        }
+        #mymeals{
+            width:380px;
+        }
+        #name{
+            display: flex;
+            width: 100%;
+            font-weight: bold;
+            justify-content: space-around;
+        }
+        input{
+            height: 30px;
+        }
+        #checkout1{
+            width:100%;
+            height: 40px;
+            color: white;
+            border: transparent;
+            font-weight: bolder;
+            font-size: 18px;
+            margin-left: 20px;
+            background-color: rgb(42,109,255);
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+        }
+        #name1{
+            display: flex;
+            width: 100%;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+        #summary{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-bottom: 0px;
+            width: 400px;
+        }
+        #r3{
+            margin-right: 10px;
+        }
+        #r2{
+            margin-left: 10px;
+        }
+        #r4{
+            font-weight: normal;margin-left: 10px
+        }
+        #r5{
+            margin-right: 10px
+        }
+        #r6{
+            font-weight: normal;margin-left: 10px
+        }
+        #r7{
+            margin-right: 10px
+        }
+        #r8{
+            font-weight: normal;margin-left: 10px
+        }
+        #r9{
+            margin-right: 10px
+        }
+        #r10{
+            font-weight: normal;margin-left: 10px
+        }
+        #r11{
+            margin-right: 10px
+        }
+        #conatainer{
+            width:90%;height:80px;background-color:rgb(255,253,247);
+            margin-top: 0px; border: 1px solid red; margin: auto;display: flex;
+        }
+
+        #f3{
+            margin-left:40px
+        }
+        #f4{
+            margin-left:40px
+        }
+        #f8{
+            margin-left: 70px;
+        }
+        #payment{
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav"> 
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt="" height="47px" width="116px" id="logo">
+        <div id="menu">
+            <p><a href=""> Plans</p></a><p>></p>
+            <p><a href="" > Meals</p></a><p>></p>
+            <p> Checkout</p></p>
+        </div>
+        <div id="customer"><i class="far fa-question-circle" style="color: rgb(50, 50, 233);"></i><a href=""><b> Customer Support</b></a></div>
+    </div>
+    <div style="background-color: rgb(255,253,247);">
+        <div id="heading">
+            <h2>Checkout</h2>
+            <h2>Order Summary</h2>
+        </div>
+        <div id="input">
+            <div id="checkout">
+                <h3 style="margin-left: 20px;">Delivery Address</h3>
+            <form id="user">
+                <div id="name">
+                        <div>
+                            <p>First Name</p>
+                            <p id="f1">sdfsdf</p>
+                        </div>
+                        <div>
+                            <p>Last Name</p>
+                            <p id="f2">sdfsdfs</p>
+                        </div>
+                </div>
+                    <div style="margin-left: 50px;">
+                        <p style="margin-left: 40px;">Fullname for Delivery Address</p>
+                        <p id="f3"></p>
+                        <div>
+                        </div>
+                        <p style="margin-left: 40px;margin-bottom: 10px;">Address Line 1</p>
+                        <p id="f4"></p>
+                        
+                        <p style="margin-left: 40px;margin-bottom: 10px;">Address Line 2</p>
+                        <p id="f4"></p>
+                    </div>
+                    
+                    <div id="name">
+                        <div>
+                            <p>City</p>
+                            <p id="f5"></p>
+                        </div>
+                        <div>
+                            <p>State</p>
+                            <p id="f6"></p>
+                            
+                        </div>
+                        <div>
+                            <p>Zip</p>
+                            <p id="f7"></p>
+                            
+                        </div>
+                    </div>
+                    
+                    <p style="margin-left: 70px;">Email</p>
+                    <p id="f8">3532</p>
+                
+                    <div style=" margin:30px 20px 10px 20px;border-bottom: 1px solid rgb(187, 187, 187);"></div>
+                    <div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <h4 style="margin-left: 20px;">Today's Total</h4>
+                            <h4 id="r1"></h4>
+                        </div>
+                    </div>
+                    <div id="payment">
+                    <h3>Payment Info</h3>
+                    <form action="" id="thank">
+                        <p>Credit Card Number</p>
+                        <input type="text" name="" id="" size="50" required>
+                            <div style="display: flex;margin-bottom: 20px;">
+                                <div style="margin-right: 20px;">
+                                    <p>Exipration</p>
+                                
+                                    <input type="text" size="25" required> 
+                                </div>
+                                <div>
+                                    <p>CVV</p>
+                                
+                                    <input type="text" size="25" required> 
+                                </div>
+                            </div>
+                    </div>
+                    <a href="thank.html"><input type="button" name="Next" id="checkout1" value="Next"></a> 
+                </form>
+                </div>
+            </form>
+            <div id="summary">
+                <div id="details">
+                    <div style="margin: 20px">
+                    <h4><a href=""> +Add Promo code </a></h3><hr>
+                    <p>Delivery Date</p>
+                    <input type="date" id="start" name="trip-start" value="2022-07-23"
+                    min="2022-01-23" max="2022-02-16" size="50"><br><hr>
+                    <div id="name1">
+                        <div>
+                            <p id='r2'style="font-weight: normal;"></p>
+                        </div>
+                        <div>
+                            <p id="r3"></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="background-color:rgb(187, 187, 187);">
+                        <div id="name1">
+                            <div>
+                                <p id="r4"></p>
+                            </div>
+                            <div>
+                                <p id="r5"></p>
+                            </div>
+                        </div>
+                        <div id="name1">
+                            <div>
+                                <p id="r6">Subtotal</p>
+                            </div>
+                            <div>
+                                <p id="r7"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="name1">
+                        <div>
+                            <p id="r8">Shipping</p>
+                        </div>
+                        <div>
+                            <p id="r9">$5.5</p>
+                        </div>
+                    </div>
+                    <div id="name1">
+                        <div>
+                            <p id="r10">Total</p>
+                        </div>
+                        <div>
+                            <p id="r11"></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="mymeals">
+                    <h3>My Meals</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div id="footer">
+        <h1 id="foot1">Common Quetion</h1>
+        <div class="foot2">
+            <p>How many servings are your meals?</p>
+            <button class="bt"> <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="my">
+            <p>The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours! <br>
+
+                Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.</p>
+        </div>
+        <div class="foot2">
+            <p>Do you accommodate dietary preferences?</p>
+            <button class="bt"> <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="my">
+            <p>We accommodate a variety of dietary preferences, including plenty of gluten-free, dairy-free, peanut-free, plant-based, low-calorie, and carb-conscious options. As a customer, you can set your own dietary preferences and easily find the meals that work for you. You can also check out individual ingredient lists for each dish if you have specific concerns, or contact us at support@freshly.com for help making selections. If you’re unable to place an order that fits your preferences now, be sure to check back frequently as we’re always adding new and exciting dishes.</p>
+        </div>
+        <div class="foot2">
+            <p>How long do the meals last?</p>
+            <button class="bt"> <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="my">
+            <p>Our meals are chef prepared and delivered fresh, so typically they have a refrigerated shelf life of about 3-5 days. Select items (such as seafood) are best eaten first, so we’ll add a badge on the package to let you know. We usually suggest enjoying these meals within the first few days of receiving your order, but you can always check their exact use-by date on the back-of-pack nutrition label. If you’re ever unable to finish your meals within their shelf life, you can always pop them into the freezer for extended storage. Just be sure to microwave your meal straight from the freezer and add a few extra minutes to reach the 165° F internal temperature we recommend.</p>
+        </div>
+
+        <div class="foot2">
+            <p>How do I heat up my meals?</p>
+            <button class="bt"> <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="my">
+            <p>Your meals will come to you fully prepared so you just have to heat em up in the microwave. On the back of each meal, you’ll find our easy steps for heating, but generally, the meals heat up in about 3 minutes (depending on your microwave). If you’re unsure, start at 2 minutes and heat in 30–second increments until the meal reaches an inner temperature of 165° F. Our meals are packaged to be heated in the microwave (for the ultimate convenience), but you can heat them in the oven if you’d like. Just so you know, our current meal containers aren’t safe for the oven or stovetop, so youll have to transfer your food to heat it up. You can check out the full oven reheat directions in our FAQ.</p>
+        </div>
+        <div class="foot2">
+            <p>How does shipping work?</p>
+            <button class="bt"> <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="my">
+            <p>To help guarantee your meals arrive in the freshest condition, there is a small shipping fee associated with your order. We deliver to all states within the continental U.S., and our shipping partners offer delivery every day of the week. The exact days that we can reach you will depend on your ZIP code and the carrier delivering your Freshly meals. Whether you're signing up or updating your typical delivery day, we'll show you all the days available to you so you can choose what's best for you.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    var noofitems=localStorage.getItem('count');
+    var cartarr=JSON.parse(localStorage.getItem('item'))
+    if(noofitems>=6){
+        document.querySelector("#r1").textContent=`$${11.79*noofitems-10}`
+    }
+    else{
+        document.querySelector("#r1").textContent=`$${11.79*noofitems}` 
+    }
+    document.querySelector("#r2").textContent=`${noofitems} meals`
+
+    document.querySelector("#r3").textContent=`$${noofitems*11.79}`
+
+    document.querySelector("#r1").textContent=`$${11.79*noofitems}`
+
+    document.querySelector("#r4").textContent=`${noofitems} meals discount`
+
+    if(noofitems>=6){
+        document.querySelector("#r5").textContent="-$12"
+    }
+    else{
+        document.querySelector("#r5").textContent="$0" 
+    }
+
+    if(noofitems>=6){
+        document.querySelector("#r7").textContent=`$${11*noofitems-12.6}`
+    }
+    else{
+        document.querySelector("#r7").textContent=`$${11*noofitems}` 
+    }
+
+    document.querySelector("#r11").textContent=`$${11*noofitems-12.6+5.5}`
+
+    var obj=JSON.parse(localStorage.getItem('details'))
+    console.log(obj)
+
+        document.querySelector("#f1").textContent=obj['first'];
+        document.querySelector("#f2").textContent=obj['last'];
+        document.querySelector("#f3").textContent=obj['full'];
+        document.querySelector("#f4").textContent=obj['add'];
+        document.querySelector("#f5").textContent=obj['city'];
+        document.querySelector("#f6").textContent=obj['state'];
+        document.querySelector("#f7").textContent=obj['zip'];
+        document.querySelector("#f8").textContent=obj['email'];
+
+
+</script>
+<script src="footer.js"></script>

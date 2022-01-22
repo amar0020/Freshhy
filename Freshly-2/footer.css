@@ -1,0 +1,36 @@
+*{
+    font-family: sans-serif
+}
+#foot1{
+    text-align: center;
+    background-color: rgb(255,253,247);
+}
+.foot2{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+}
+.fa-chevron-down{
+    font-size: 25px;
+    margin-top: 15px;
+    color: rgb(42,109,255);
+}
+.my{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    background-color: rgb(255,253,247);
+    display: none;
+}
+.bt{
+    background-color: rgb(255,253,247);
+    border:transparent;
+}
+#footer{
+    background-color:rgb(255,253,247);
+    margin-top: 100px;
+}

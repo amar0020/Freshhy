@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c7762b47e9.js" crossorigin="anonymous"></script>
+    <title>Document</title><style>
+        *{
+            font-family: sans-serif;
+        }
+        #nav{
+            display: flex;
+        }
+        #nav1{
+            width: 75%;
+            height:48px;
+            background-color: rgb(255,253,247);
+            padding-left: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+        }
+        #nav2{
+            width: 25%;
+            height:48px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            background-color: rgb(255,253,247);
+        }
+        #filter{
+            height:560px;
+            width:15%;
+            padding-left: 10px;
+            background-color: rgb(255,253,247);
+            margin-bottom: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        #main{
+            height:538px;
+            width: 100%;
+            display: flex;
+        }
+        #cart{
+            height: 538px;
+            width: 25%;
+        }
+        #item{
+            width: 60%;
+            height: 560px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            overflow: scroll;
+            overflow-x:hidden ;
+        }
+        .fooditem{
+            height: 332px;
+            width: 240px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 5px;
+
+        }
+        .img{
+            height: 192px;
+            width: 240px;
+            background-size: 190px 232px;
+            border: 1px solid transparent;
+        }
+        .type{
+            margin: 172px 200px 0px 0px;
+            
+            width: 90px;
+            padding-bottom: 2px;
+
+        }
+        .foodname{
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .details{
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: gray;
+
+        }
+        .energy{
+            font-size: 12px;
+            width: 30px;
+            padding-right: 7px;
+            margin: 2px;
+            
+        }
+        .mid{
+            border-left: 1px solid grey;
+            border-right:  1px solid grey;
+            padding-left: 7px;
+        }
+        .add{
+            margin-left: 20px;
+            background-color: rgb(42,109,255);
+            width: 70px;
+            height: 40px;
+            border: transparent;
+            margin-top: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        .lower{
+            display: inline-flex;
+            margin-left: 4px;
+        }
+        #list{
+            height: 120px;
+            width: 100%;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin-bottom: 10px;
+        }
+        #total{
+            height: 25%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        #cartimg{
+            height: 64px;
+            width: 64px;
+            border-radius: 10px;
+            margin: 15px;
+            margin-top: 18px;
+        }
+        #listname{
+            margin: 45px 0px  20px 30px;
+            height: 64px;
+            width: 150px;
+            font-weight: 550;
+            font-size: 15px;
+        }
+        #listitem{
+            height: 100px;
+            width: 320px;
+            border: 1px solid black;
+        }
+        #add_rem{
+            margin-top: 15px;
+            margin-left: 20px;
+            height: 100px;
+
+        }
+        #plus{
+            display: block;
+            margin-bottom: 15px;
+            margin-top: 0px;
+            background-color: white;
+            color: rgb(42,109,255);
+            font-size:30px;
+            border: transparent;
+            text-align: center;
+        }
+        #first{
+            width: 100%;
+            height: 80%;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        #meals{
+            text-align:center;
+            margin-top: 100px;
+            font-family: sans-serif;
+        }
+        #summary{
+            height: 150px;
+            width:100%;
+        }
+        #cartlogo{
+            margin-right: 10px;
+        }
+        #cartdata{
+            display: flex;
+            border-radius: 10px;
+            border: 2px solid gray;
+            width: 60px;
+            height: 40px;
+            padding-left: 10px;
+        }
+        #checkout{
+            width:100%;
+            height: 40px;
+            color: white;
+            border: transparent;
+            font-weight: bolder;
+            font-size: 18px;
+            border: 1px solid grey;
+        }
+        #diet{
+            width: 100%;
+            height: 20px;
+            margin-bottom: 10px;
+
+        }
+        #diet2{
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        #diet3{
+            height: 20px;
+            margin-top: 20px;
+        }
+        .finfo{
+            width: 100%;
+            height: 70px;
+        }
+        fieldset{
+            border: 0;
+        }
+        #fill{
+            margin-bottom: 30px;
+        }
+        #fill>input{
+            margin-bottom: 20px;
+        }
+        #categ{
+            margin-bottom: 30px;
+        }
+        #categ>input{
+            margin-bottom: 20px;
+        }
+        #sort{
+            margin-bottom: 30px;
+        }
+        #sort>input{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="nav1">
+            <h4>Chooose Meals</h4>
+        </div>
+        <div id="nav2">
+            <p style="margin-left: 10px;">My delivery for :</p>
+        </div>
+    </div>
+    <div id="main">
+        <div id="filter">
+            <div><h4>Filter By:</h4></div>
+            <div onchange="filter(event)" id="fill" >
+                <legend style="margin-bottom: 20px;"><b> Diet</b></legend>
+                <input type="checkbox" value="glutan">Glutan Free <br>
+                <input type="checkbox" value="carb">Carb conscious<br>
+                <input type="checkbox" value="plant">Plant-Based<br>
+                <input type="checkbox" value="dairy">Dairy-Free<br>
+            
+            </div>
+
+            <div id="categ" onchange="category(event)"> 
+           
+                <legend id="categ"><b>Categories</b></legend>
+                <input type="radio">Full-menu <br>
+                <input type="radio" value="freshly">Freshly-Fit<br>
+                <input type="radio">Purely-Plant<br>
+                <input type="radio">Proteins<br>
+            </fieldset>
+            </div> 
+            <div><h4>Sort By:</h4></div>
+            <div id="sort" onchange="sort(event)">
+           
+                <legend id="sort"><b> Nutritional macros</b></legend>
+                <input type="radio">Default<br>
+                <input type="radio" value="cal">Calories<br>
+                <input type="radio" value="carbs">Carbs<br>
+                <input type="radio">Plant-Based<br>
+                
+            
+            </div> 
+
+        </div>
+            
+        <div id="item">
+        </div>
+        <div id="cart">
+           <div id='first'>
+               <p id="meals">Get started by adding 4 meals</p>
+           </div>
+           <div id='total'>
+               <div style="display: flex;font-weight: bold;justify-content: space-between;">
+                   <p id="subtotal"></p>
+                   <div id="cartdata">
+                       <i class="fas fa-shopping-cart" style="margin-top: 15px;"></i>  <p id="cartlogo"></p>
+                   </div>
+               </div>
+               <button id="checkout" onclick=changetext()></button>
+           </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+<script src="item2.js"></script>
+<script>
+    var cartarr=JSON.parse(localStorage.getItem('item')) || []
+function displayitem (arr){
+    document.querySelector('#item').innerHTML=""
+    arr.map(function(elem,index){
+    var food=document.createElement('div');
+    food.setAttribute('class','fooditem')
+
+    var img=document.createElement('div')
+    img.setAttribute('class','img')
+    img.style.backgroundImage=`url(${elem.img})`;
+
+    var a=document.createElement('p');
+    a.textContent=elem.type;
+    a.setAttribute('class','type');
+    if(elem.type=="FreshlyFit" || elem.type=="Plant-Based"){
+        a.style.backgroundColor="rgb(182,240,221)"
+    }
+    img.append(a);
+    food.append(img);
+
+    var finfo=document.createElement('div')
+    finfo.setAttribute('class','finfo')
+
+    var b=document.createElement('h4');
+    b.setAttribute('class','foodname')
+    b.textContent=elem.name;
+
+    var c=document.createElement('p')
+    c.textContent=elem.extra;
+    c.setAttribute('class','details')
+    finfo.append(b,c)
+
+    var d=document.createElement('div')
+    d.setAttribute('class','lower')
+
+    var e=document.createElement('div')
+    e.setAttribute('class','energy')
+    e.textContent=elem.glutan;
+
+    var f=document.createElement('div')
+    f.setAttribute('class','energy mid')
+    f.textContent=`${elem.energy} Cals`
+
+    var g=document.createElement('div')
+    g.setAttribute('class','energy')
+    g.textContent=`${elem.carbs}gm Crabs`
+
+    food.append(finfo,d);
+    d.append(e,f,g);
+
+    var button=document.createElement("button")
+    button.setAttribute('class','add')
+    button.textContent="+ Add"
+    button.addEventListener('click',function(){
+        addtocart(elem,index)
+    })
+
+    food.append(button)
+    document.querySelector('#item').append(food)
+    });
+}
+displayitem(arr)
+
+
+    
+    function addtocart(elem,index){
+        cartarr.push(elem)
+        displaycart();
+        
+    }
+    displaycart();
+    function displaycart(){
+        localStorage.setItem('item',JSON.stringify(cartarr))
+        localStorage.setItem('count',cartarr.length)
+        document.querySelector("#first").innerHTML=""
+        cartarr.map(function(list,index)
+        {
+        var a=document.createElement('div');
+        a.setAttribute('id','list');
+        
+        var b=document.createElement('div');
+        b.setAttribute('id','cartimg');
+        var b1=document.createElement('img');
+        b1.src=list.img;
+        b1.style.height="64px";
+        b1.style.width="64px";
+        b.append(b1);
+
+        var c=document.createElement('div');
+        c.setAttribute('id','listname');
+        c.textContent=list.name;
+
+        var d=document.createElement('div');
+        d.setAttribute('id','add_rem');
+        var btn1=document.createElement('button');
+        btn1.setAttribute('id','plus')
+        btn1.textContent='+'
+        btn1.addEventListener('click',function(){
+            addtocart(list)
+        })
+        var btn2=document.createElement('button');
+        btn2.setAttribute('id','plus');
+        btn2.textContent='_'
+        btn2.addEventListener('click',function(){
+            remove(index)
+        })
+        d.append(btn1,btn2);
+
+        a.append(b,c,d)
+
+        document.querySelector("#first").append(a)
+
+
+
+        
+    })
+
+
+    if(cartarr.length>0){
+        var sum=document.createElement('div')
+        sum.setAttribute('id','summary')
+        sum.innerHTML=`<h4>Order Summary</h4> <div style="display:flex;justify-content:space-between"><p>${cartarr.length} 
+        meals </p><p>$${11.79*cartarr.length}</div><div style="display:flex;justify-content:space-between">
+        <p style="font-weigth:bold">Subtotal</p><p>$${11.79*cartarr.length}</div>`
+        
+        document.querySelector('#first').append(sum)
+        document.querySelector("#subtotal").textContent=`Subtotal $${cartarr.length*11.79}`
+        document.querySelector("#cartlogo").textContent=`${cartarr.length}`
+    }
+    else{
+        document.querySelector("#subtotal").textContent=""
+        document.querySelector("#cartlogo").textContent=`${cartarr.length}`
+    }
+        if(cartarr.length<4){
+            document.querySelector('#checkout').textContent=`Add ${4-cartarr.length} to Continue`
+            document.querySelector('#checkout').style.backgroundColor="gray"
+        }
+        else{
+            document.querySelector('#checkout').textContent="Next"
+            document.querySelector('#checkout').style.backgroundColor="rgb(42,109,255)"
+    }
+    
+    
+    
+    }
+    function remove(listno){
+        
+        cartarr.splice(listno,1);
+        
+        displaycart();
+    }
+    console.log(arr)
+
+    function filter(){
+        var selected=event.target.value;
+        
+        if(selected=="plant"){
+            arr=arr.filter(function(elem){
+                return elem.type=="Plant-Based"
+            })
+        }
+        if(selected=="glutan"){
+            arr=arr.filter(function(elem){
+                return elem.glutan=="Gluten free"
+            })
+        }
+        displayitem(arr)
+        console.log(arr)
+        displayitem(arr)
+    }
+    function category(){
+        var selected=event.target.value;
+        
+        if(selected=="freshly"){
+            arr=arr.filter(function(elem){
+                return elem.type=="FreshlyFit"
+            })
+        }
+        displayitem(arr)
+    }
+    function sort(){
+        var selected=event.target.value;
+        
+        if(selected=="cal"){
+            arr=arr.sort(function(a,b){
+                return Number(a.energy)-Number(b.energy)
+            })
+        }
+        displayitem(arr)
+    }
+    function sort(){
+        var selected=event.target.value;
+        
+        if(selected=="carbs"){
+            arr=arr.sort(function(a,b){
+                return a.carbs-b.carbs
+            })
+        }
+        displayitem(arr)
+    }
+
+    function changetext(){
+        if(cartarr.length>=4){
+            window.location.href="checkout.html"
+        }
+    }
+
+
+
+
+
+</script>
