@@ -1,9 +1,6 @@
-# gap-project
+# Freshly
 project-gap-website
 
-
-
-![Gap](https://github.com/Reshma-fw14/gap.com-backend/blob/main/public/gap%20images/gap1.png)
 
 # Welcome :wave:
 
