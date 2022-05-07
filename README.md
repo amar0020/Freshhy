@@ -6,8 +6,6 @@ project-gap-website
 
 ### About Freshly:
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.supermarketnews.com%2Fnews%2Fnestl-acquires-freshly-prepared-meal-delivery-service-950-million&psig=AOvVaw2PcHuvOi1T67E40o2mmPq2&ust=1651995968748000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjbve_yzPcCFQAAAAAdAAAAABAD
-
 > Clone an E-commerce web application freshly.com that caters to providing hygienic food. This project is executed individually and build in seven days.
 
 # About this project ⏬
