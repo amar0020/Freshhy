@@ -4,9 +4,9 @@ project-gap-website
 
 # Welcome :wave:
 
-### About Gap:
+### About Freshly:
 
-> Gap is an American e-commerce company, headquartered in USA. The company launched in 1999, Gap is an Emirati retail fashion brand which comes under Dubai-based retail & Each Lifestyle store offers womenswear, menswear, kidswear, footwear & bags, beauty & skincare, accessories (watches, fragrances, sunglasses) & more.
+> Clone an E-commerce web application freshly.com that caters to providing hygienic food. This project is executed individually and build in seven days.
 
 # About this project ⏬
 
@@ -18,14 +18,7 @@ project-gap-website
 
 
 ## deployment Link:-
-https://gap-website-project.netlify.app/
-
- ## Contributers :- 
-- #### [Reshma](https://www.linkedin.com/in/reshma-a8a871189/)
-- #### [Shravya](https://www.linkedin.com/in/shravya-rao-chanda-4ba10b231/)
-- #### [Shreya](https://www.linkedin.com/in/shreya-pannase-382814214/)
-- #### [Tejaswini](https://www.linkedin.com/in/tejaswini-shreeramwar/)
-- #### [Aditya kumar](https://www.linkedin.com/in/aditya-kumar-898a9814a/) 
+https://competent-noether-f84e79.netlify.app/
 
 ## Tech Stack :- 
 
@@ -62,4 +55,4 @@ https://gap-website-project.netlify.app/
 <!-- ## Screenshots :- 
 ## For more details :- ![frontpage](https://user-images.githubusercontent.com/96103401/158800507-f60b4236-f11f-4bc9-88dc-e89f386f7fbb.png) -->
 
-[Blog](https://medium.com/@shreya16pannase/gap-project-team-remote-coders-de2b9be187c0)
+[Blog](https://medium.com/@amarkrsoni8989/project-to-make-clone-of-freshly-an-e-commerce-of-food-ef306e10ae0)
